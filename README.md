@@ -17,7 +17,7 @@
 
 
 
-**Glo Academy**  [![Glo Academy](https://pp.userapi.com/c841124/v841124734/7ead7/M1E2FXUesaA.jpg?ava=1)](https://vk.com/glo_academy)
 
+[js]: https://raw.githubusercontent.com/muromtsev/course-JS3/master/img/javascript24.png
 
 
