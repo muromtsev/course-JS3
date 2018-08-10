@@ -1,29 +1,30 @@
-//let budget = prompt('Ваш бюджет на месяц?'),
-//    nameMagazine = prompt('Название вашего магазина?');
+let budget = prompt('Ваш бюджет на месяц?'),
+    nameMagazine = prompt('Название вашего магазина?'),
+    time = 21;
 
 
 
 
 let mainList = {
-        budget: 1,
-        nameMagazine: 2,
+        budget: budget,
+        nameMagazine: nameMagazine,
         shopGoods: [],
         employers: {},
         open: true
 }
 
-//for(let i = 0; i < 5; i++) {
-//    let a = prompt('Какой тип товаров будем добавлять?');
-//    
-//    if ((typeof(a)) === 'string' && a != '' && a.length < 50) {
-//        console.log('Всё верно!');
-//        mainList.shopGoods[i] = a;
-//        console.log(mainList.shopGoods)
-//    } else {
-//        console.log('Введите верные данные!');
-//        console.log(mainList.shopGoods)
-//    }
-//}
+for(let i = 0; i < 5; i++) {
+    let a = prompt('Какой тип товаров будем добавлять?');
+    
+    if ((typeof(a)) === 'string' && (typeof(a)) != null && a != '' && a.length < 50) {
+        console.log('Всё верно!');
+        mainList.shopGoods[i] = a;
+        console.log(mainList.shopGoods)
+    } else {
+        console.log('Введите верные данные!');
+        i--;
+    }
+}
 //let i = 0;
 //while (i < 3) {
 //    let a = prompt('Какой тип товаров будем добавлять?');
