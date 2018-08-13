@@ -11,7 +11,11 @@
 	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/add%231/main.js)
 - [День 2](https://github.com/muromtsev/course-JS3/blob/master/day%232/main.js)
 	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/add%232/main.js)
-
+- [День 3](https://github.com/muromtsev/course-JS3/blob/master/day%233/main.js)
+	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/add%233/main.js)
+- [День 4](https://github.com/muromtsev/course-JS3/blob/master/day%234/main.js)
+	
+	
 
 
 
