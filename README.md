@@ -8,6 +8,10 @@
 - [Урок 5](https://github.com/muromtsev/course-JS3/blob/master/lesson%205/lesson%205%20new/js/script.js)
 	- [project](https://github.com/muromtsev/course-JS3/blob/master/lesson%205%20_project/js/script.js)
 	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%205%20add/main.js)
+- [Урок 6](https://github.com/muromtsev/course-JS3/blob/master/lesson%206%20_project/js/script.js)
+	- [extra](https://github.com/muromtsev/course-JS3/blame/master/lesson%206%20_project/js/script.js#L186)
+	- [extra-2](https://github.com/muromtsev/course-JS3/blame/master/lesson%206%20_project/js/script.js#L140)
+	
 	
 	
 
