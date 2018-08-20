@@ -1,0 +1,8 @@
+.timer {
+	width: 100%;
+	font-size: calc(3em + 2vw);
+	text-align: center;
+	font-family: monospace;
+	background-color: tan;
+	color: #fff;
+}
