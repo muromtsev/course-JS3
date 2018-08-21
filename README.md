@@ -14,10 +14,11 @@
 - [Урок 7](https://github.com/muromtsev/course-JS3/blob/master/lesson%207/js/script.js)
 	- [timer](https://github.com/muromtsev/course-JS3/blob/master/lesson%207/_timer/timer.js)
 	- [anime](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%207%20add/animation.js)
+- [Урок 8](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L36)
+	- [timer](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L96)
 	
 	
 	
-
 
 
 
