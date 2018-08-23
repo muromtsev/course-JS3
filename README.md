@@ -16,6 +16,8 @@
 	- [anime](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%207%20add/animation.js)
 - [Урок 8](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L36)
 	- [scroll(!)](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L96)
+- [Урок 10](https://github.com/muromtsev/course-JS3/blob/master/lesson%2010/main.js)
+	- [mask(!)](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%2010%20add/js.js)
 	
 	
 	
