@@ -7,8 +7,6 @@ let week = [
     'суббота',
     'воскресенье'
 ];
-// let a = week[i];
-//    console.log(a);
 
 for(let i = 0; i < week.length; i++) {
     let ul = document.createElement('ul'),
@@ -27,7 +25,6 @@ for(let i = 0; i < week.length; i++) {
         li.style.fontWeight = 'bold';
     }    
 }
-
 
 let arr = [
     '3786',
