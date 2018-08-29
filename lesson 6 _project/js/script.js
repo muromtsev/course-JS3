@@ -42,6 +42,15 @@ let money,
 
 function CN(i) { return document.getElementsByClassName(i); };
 
+let mainList = {
+    budget: money,
+    nameMagazine: name,
+    shopGoods: [],
+    employers: {},
+    shopItems: [],
+    open: false,
+    discount: false
+}
 
 // Функция открытия магазина
 open_btn.addEventListener('click', () => {
@@ -208,16 +217,6 @@ function checkLanguage() {
 
 checkLanguage();
 
-
-let mainList = {
-    budget: money,
-    nameMagazine: name,
-    shopGoods: [],
-    employers: {},
-    shopItems: [],
-    open: false,
-    discount: false
-}
 
 
     

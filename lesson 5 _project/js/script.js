@@ -28,9 +28,6 @@ let open_btn            = document.getElementById('open-btn'),
     //  поля сотрудники
     hire_employers_item = document.querySelectorAll('.hire-employers-item');
 
-
-
-
 //  document.getElementsByClassName =]
 
 function CN(i) { return document.getElementsByClassName(i); }

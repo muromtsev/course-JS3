@@ -246,5 +246,121 @@ window.addEventListener('DOMContentLoaded', function() {
 			}
 		});
 
+		//Slider
+		
+		let sliderIndex = 1,
+			slides 		= document.getElementsByClassName('slider-item'),
+			prev 		= document.querySelector('.prev'),			
+			next 		= document.querySelector('.next'),
+			dotsWrap	= document.querySelector('.slider-dots'),
+			dots 		= document.getElementsByClassName('dot');
+
+			showSlides(sliderIndex);
+
+		function showSlides(n) {
+			if(n > slides.length) {
+				sliderIndex = 1;
+			};
+			if(n < 1) {
+				sliderIndex = slides.length;
+			};
+
+			for(let i = 0; i < slides.length; i++) {
+				slides[i].style.display = 'none';
+			};
+
+			for(let i = 0; i < dots.length; i++) {
+				dots[i].classList.remove('dot-active');
+			};
+
+			slides[sliderIndex - 1].style.display = 'block';
+			dots[sliderIndex - 1].classList.add('dot-active');
+		} //showSlider
+
+		function plusSlides(n) {
+			showSlides(sliderIndex += n);
+		}
+		function currentSlide(n) {
+			showSlides(sliderIndex = n);
+		}
+
+		prev.addEventListener('click', function() {
+			plusSlides(-1);
+		});
+		next.addEventListener('click', function() {
+			plusSlides(1);
+		});
+
+		dotsWrap.addEventListener('click', function(event) {
+			for(let i = 0; i < dots.length + 1; i++) {
+				if(event.target.classList.contains('dot') && event.target == dots[i - 1]) {
+					currentSlide(i);
+				}
+			}
+		});
+
+		//Calc
+		
+		let persons 	= document.getElementsByClassName('counter-block-input')[0],
+			restDays 	= document.getElementsByClassName('counter-block-input')[1],
+			place 		= document.getElementById('select'),
+			totalValue 	= document.getElementById('total'),
+			personsSum 	= 0,
+			daysSum 	= 0,
+			total 		= 0;
+
+			totalValue.innerHTML = 0;
+
+			persons.addEventListener('change', function() {
+				personsSum = +this.value;
+				total = (daysSum + personsSum) * 4000;
+
+				if(restDays.value == '') {
+					totalValue.innerHTML = 0;
+				} 
+				else if(restDays.value != '' && persons.value == '') {
+					totalValue.innerHTML = 'оба поля заполните'
+				}
+				else {
+					totalValue.innerHTML = total;
+				};
+
+			});//persons
+
+			restDays.addEventListener('change', function() {
+				daysSum = +this.value;
+				total = (daysSum + personsSum) * 4000;
+			
+				if(persons.value == '') {
+					totalValue.innerHTML = 0;
+				} 
+				else if(restDays.value == '' && persons.value != '') {
+					totalValue.innerHTML = 'оба поля заполните'
+				} 
+				else {
+					totalValue.innerHTML = total;
+				};				
+
+			});//restDays
+
+			place.addEventListener('change', function() {
+				if(restDays.value == '' || persons.value == '') {
+					totalValue.innerHTML = 0;
+				} else {
+					let a = total;
+					totalValue.innerHTML = a * this.options[this.selectedIndex].value;
+				}
+				
+			});//place
+
+			persons.addEventListener('keyup', onlyNumber);
+			restDays.addEventListener('keyup', onlyNumber);
+
+			function onlyNumber(event) {	
+	            if(event.which == 69 || event.which == 190 || event.which == 110 || event.which == 188 || event.which == 191) {
+	            	alert('Только цифры!');
+	            	this.value = '';
+	            }		            		
+			}
 });//window
 

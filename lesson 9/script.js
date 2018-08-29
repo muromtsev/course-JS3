@@ -94,61 +94,31 @@ window.addEventListener('DOMContentLoaded', function() {
 
 
 		//Scroll
-		//...не моё, надо разбираться и написать своё =)
-		var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-	    V = .4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+		var linkNav = document.querySelectorAll('[href^="#"]'),
+	    	V 		= .4;
+	    	
 		for (var i = 0; i < linkNav.length; i++) {
-		    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
-		        e.preventDefault(); //отменяем стандартное поведение
-		        var w = window.pageYOffset,  // производим прокрутка прокрутка
-		            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-		        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
-		            start = null;
+		    linkNav[i].addEventListener('click', function(e) { 
+		        e.preventDefault(); 
+		        var w 		= window.pageYOffset,  
+		        	hash 	= this.href.replace(/[^#]*(.*)/, '$1'); 
+		        	t 		= document.querySelector(hash).getBoundingClientRect().top,
+		            start 	= null;
+
 		        requestAnimationFrame(step);  
 		        function step(time) {
 		            if (start === null) start = time;
-		            var progress = time - start,
-		                r = (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
+		            var progress	= time - start,
+		               	r 			= (t < 0 ? Math.max(w - progress/V, w + t) : Math.min(w + progress/V, w + t));
 		            window.scrollTo(0,r);
 		            if (r != w + t) {
 		                requestAnimationFrame(step)
 		            } else {
-		                location.hash = hash  // URL с хэшем
+		                location.hash = hash
 		            }
 		        }
-		        //console.log(w);
 		    }, false);
-		}
-
-
-		//Modal
-		
-		// let more = document.querySelector('.more'),
-		// 	overlay = document.querySelector('.overlay'),
-		// 	close 	= document.querySelector('.popup-close');
-
-		// more.addEventListener('click', function() {
-		// 	this.classList.add('more-splash');
-		// 	overlay.style.display = 'block';
-		// 	document.body.style.overflow = 'hidden';
-		// });
-		// close.addEventListener('click', function() {
-		// 	overlay.style.display = 'none';
-		// 	more.classList.remove('more-splash');
-		// 	document.body.style.overflow = '';
-		// });
-
-		//Modal tabs
-		
-		// let descr_btn = document.querySelectorAll('.description-btn');
-		// for( let i = 0; i < descr_btn.length; i++) {
-		// 	descr_btn[i].addEventListener('click', showTab);
-		// }
-		// function showTab() {
-		// 	this.classList.add('more-splash');
-		// 	overlay.style.display = 'block';
-		// 	document.body.style.overflow = 'hidden';
-		// }		
+		}	
 
 		function showModal(id) {
 			let overlay = document.querySelector('.overlay'),

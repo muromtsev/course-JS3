@@ -1,8 +1,6 @@
 let menu    = document.querySelector('.menu'),
     items   = document.querySelectorAll('.menu .menu-item');
 
-console.log(menu);
-
 //  Меняем местами пункты меню, 3 на 2
 
 menu.insertBefore(items[2], items[1]);
@@ -27,8 +25,6 @@ menu.appendChild(item_5);
 
 document.body.style.background = "url('img/apple_true.jpg') no-repeat center";
 
-//https://www.w3schools.com  - знает всё ;-)
-
 //  меняем заголовок страницы
 
 let title = document.querySelector('.title');
@@ -45,9 +41,3 @@ document.querySelectorAll('.column')[1].removeChild(adv);
 
 let message = prompt('Ваше отношение к технике Apple?', '');
 document.querySelector('.prompt').innerHTML = message;
-
-//the [end]
-
-
-
-

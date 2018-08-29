@@ -43,9 +43,6 @@ window.addEventListener('DOMContentLoaded', function() {
 				seconds = Math.floor( (t/1000) % 60),
 				minutes = Math.floor( (t/1000/60) % 60),
 				hours 	= Math.floor( (t/(1000*60*60)) );
-				
-				
-
 
 				//console.log(Date.parse(endtime));
 
@@ -92,18 +89,17 @@ window.addEventListener('DOMContentLoaded', function() {
 
 		setClock('timer', deadline);
 
-
 		//Scroll
-		//...не моё, надо разбираться и написать своё =)
-		var linkNav = document.querySelectorAll('[href^="#"]'), //выбираем все ссылки к якорю на странице
-	    V = .4;  // скорость, может иметь дробное значение через точку (чем меньше значение - тем больше скорость)
+		var linkNav = document.querySelectorAll('[href^="#"]'), 
+	    	V 		= .4;  
 		for (var i = 0; i < linkNav.length; i++) {
-		    linkNav[i].addEventListener('click', function(e) { //по клику на ссылку
-		        e.preventDefault(); //отменяем стандартное поведение
-		        var w = window.pageYOffset,  // производим прокрутка прокрутка
-		            hash = this.href.replace(/[^#]*(.*)/, '$1');  // к id элемента, к которому нужно перейти
-		        t = document.querySelector(hash).getBoundingClientRect().top,  // отступ от окна браузера до id
-		            start = null;
+		    linkNav[i].addEventListener('click', function(e) { 
+		        e.preventDefault(); 
+		        var w 		= window.pageYOffset, 
+		            hash 	= this.href.replace(/[^#]*(.*)/, '$1');  
+		        	t 		= document.querySelector(hash).getBoundingClientRect().top,  
+		            start 	= null;
+
 		        requestAnimationFrame(step);  
 		        function step(time) {
 		            if (start === null) start = time;
@@ -113,10 +109,9 @@ window.addEventListener('DOMContentLoaded', function() {
 		            if (r != w + t) {
 		                requestAnimationFrame(step)
 		            } else {
-		                location.hash = hash  // URL с хэшем
+		                location.hash = hash  
 		            }
 		        }
-		        console.log(w);
 		    }, false);
 		}
 });//window

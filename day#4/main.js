@@ -1,19 +1,7 @@
 let money,
     name,
-    time = 21,
-    price = 2.32;
-
-function start() {
-    money = prompt('Ваш бюджет?', '');
-    
-    while(isNaN(money) || money == '' || money == null) {
-        money = prompt('Ваш бюджет?', '');
-    }
-    
-    name = prompt('Название вашего магазина?', '').toUpperCase();
-}
-//start();
-
+    time    = 21,
+    price   = 2.32;
 
 let mainList = {
     budget: money,
@@ -102,6 +90,17 @@ let mainList = {
         
     }
 }//mainList
+
+function start() {
+    money = prompt('Ваш бюджет?', '');
+    
+    while(isNaN(money) || money == '' || money == null) {
+        money = prompt('Ваш бюджет?', '');
+    }
+    
+    name = prompt('Название вашего магазина?', '').toUpperCase();
+}
+//start();
 
 for(var key in mainList) {
     console.log('Наш магазин включает в себя: ' + key);

@@ -1,9 +1,6 @@
-let budget = prompt('Ваш бюджет на месяц?'),
-    nameMagazine = prompt('Название вашего магазина?'),
-    time = 21;
-
-
-
+let budget          = prompt('Ваш бюджет на месяц?'),
+    nameMagazine    = prompt('Название вашего магазина?'),
+    time            = 21;
 
 let mainList = {
         budget: budget,
@@ -53,8 +50,6 @@ for(let i = 0; i < 5; i++) {
 //    }
 //}
 //while (i < 3);
-
-
 
 //
 //function oneDay(budget) {

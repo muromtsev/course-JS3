@@ -1,7 +1,16 @@
 let money,
     name,
-    time = 21,
-    price = 2.32;
+    time    = 21,
+    price   = 2.32;
+
+let mainList = {
+    budget: money,
+    nameMagazine: name,
+    shopGoods: [],
+    employers: {},
+    open: true,
+    discount: true
+}
 
 function start() {
     money = prompt('Ваш бюджет?');
@@ -12,17 +21,8 @@ function start() {
     
     name = prompt('Название вашего магазина?').toUpperCase();
 }
+
 //start();
-
-
-let mainList = {
-    budget: money,
-    nameMagazine: name,
-    shopGoods: [],
-    employers: {},
-    open: true,
-    discount: true
-}
 
 function chooseGoods() {
     for(let i = 0; i < 5; i++) {
@@ -86,8 +86,6 @@ function askName() {
             console.log('Введите верные данные!');
             i--;
         }
-    }
-    
-    
+    }  
 }
 askName();
