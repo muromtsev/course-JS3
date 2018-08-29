@@ -1,4 +1,5 @@
-- [Урок 1](https://github.com/muromtsev/course-JS3/blob/master/day%231/main.js)
+- [Урок № 1
+Введение в JS, типы данных и операторы](https://github.com/muromtsev/course-JS3/blob/master/day%231/main.js)
 	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/add%231/main.js)
 - [Урок 2](https://github.com/muromtsev/course-JS3/blob/master/day%232/main.js)
 	- [extra](https://github.com/muromtsev/course-JS3/blob/master/additionally/add%232/main.js)
