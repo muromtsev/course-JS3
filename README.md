@@ -17,7 +17,7 @@
 - [Урок № 8 Параметры документа, окна и работа с ними](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L36)
 	- [scroll](https://github.com/muromtsev/course-JS3/blame/master/lesson%208/js/script.js#L96)
 - [Урок № 9 Контекст вызова this](https://github.com/muromtsev/course-JS3/blame/master/lesson%209/script.js#L123)
-	- [<input id="age" value="30">](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%209%20add/js.js)
+	- [input](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%209%20add/js.js)
 - [Урок № 10 Особенности современного стандарта. Тренды. Интерполяция](https://github.com/muromtsev/course-JS3/blob/master/lesson%2010/main.js)
 	- [mask(!)](https://github.com/muromtsev/course-JS3/blob/master/additionally/lesson%2010%20add/js.js)
 - [Урок № 11 Работа с JSON, AJAX](https://github.com/muromtsev/course-JS3/blob/master/lesson%2011/script.js#L147)
