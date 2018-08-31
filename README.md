@@ -24,6 +24,7 @@
 	- [form gif](https://github.com/muromtsev/course-JS3/blob/master/lesson%2011/script.js#L231)
 - [Урок № 12 Слайдер на чистом JS](https://github.com/muromtsev/course-JS3/blob/master/lesson%2012/script.js)
 - [Урок № 13 JQuery, как устроена $. Современные библиотеки и фрэймворки](https://github.com/muromtsev/course-JS3/blob/master/lesson%2013/js/main.js)
+- [Урок № 14 Приём модуль. Зачем и как использовать. Инкапсуляция](https://github.com/muromtsev/course-JS3/blob/master/lesson%2014/js/bundle/bundle.js)
 	
 	
 	
